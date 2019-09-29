@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de jogos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/boostrap.css" rel="stylesheet">
+    <style type="text/css">
+h11 {
+    color:red;
+}
+
+#logo {
+    width:50%;
+    height:50%;
+}
+
+.panel-heading{
+    font-size:150%;
+}
+
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/boostrap.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<head>
+
+    
+</head>
+<body>
+
+    <form class="form-horizontal" action="Cadastro" method="POST">
+        <fieldset>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Cadastro de jogos
+                </div>
+                <div class="panel-heading">
+                    <a href="Lista" type="submit" class="btn btn-warning" > Exibir Jogos Cadastrados</a>
+                </div>
+
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-11 control-label">
+                            <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="Nome">Titulo do Jogo:  <h11>*</h11></label>  
+                      <div class="col-md-8">
+                      <input id="Titulo" name="Titulo" placeholder="" class="form-control input-md" required="" type="text">
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="Código">Código <h11>*</h11></label>  
+                      <div class="col-md-2">
+                        <input id="Codigo" name="Codigo" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                      </div>
+                      <label class="col-md-2 control-label" for="Ano">Ano de Lancamento <h11>*</h11></label>  
+                      <div class="col-md-2">
+                        <input id="Ano" name="Ano" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                      </div>
+                      <label class="col-md-1 control-label" for="Preco">Preço <h11>*</h11></label>  
+                      <div class="col-md-2">
+                        <input id="Preco" name="Preco" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0.0-9.0]+$">
+                      </div>
+                    </div>
+
+                      <label class="col-md-2 control-label" for="Genero">Genero <h11>*</h11></label>
+                      <div class="col-md-2">
+                        <select required id="Genero" name="Genero" class="form-control">
+                            <option value="Acao">Acao</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="Esporte">Esporte</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Luta">Luta</option>
+                            <option value="Mundo Aberto">Mundo Aberto</option>
+                        </select>
+                      </div>
+
+                    <!-- Multiple Radios (inline) -->
+                    <label class="col-md-2 control-label" for="Classificacao Etaria">Classificacao Etaria: <h11>*</h11></label>
+                      <div class="col-md-2">
+                        <select required id="Classificacao Etaria" name="Classificacao Etaria" class="form-control">
+                            <option value="Livre">Livre</option>
+                            <option value="10">Maiores de 10 Anos</option>
+                            <option value="12">Maiores de 12 Anos</option>
+                            <option value="14">Maiores de 14 Anos</option>
+                            <option value="16">Maiores de 16 Anos</option>
+                            <option value="18">Maiores de 18 Anos</option>
+                        </select>
+                      </div>
+
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="Nome">Requisitos Minimos:  <h11>*</h11></label>  
+                      <div class="col-md-8">
+                          <textarea id="Requisitos Minimos" name="Requisitos Minimos" placeholder="" class="form-control input-md" required="" type="text"></textarea>
+                      </div>
+                    </div>
+
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" for="Cadastrar"></label>
+                      <div class="col-md-8">
+                        <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                        <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
